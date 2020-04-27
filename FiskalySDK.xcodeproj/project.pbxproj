@@ -166,6 +166,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9BFF5C9244629610032D061 /* Build configuration list for PBXNativeTarget "FiskalySDK" */;
 			buildPhases = (
+				D944C39B2456E9F200CBC3DE /* Fetch Client Library */,
 				D9BFF5B0244629610032D061 /* Headers */,
 				D9BFF5B1244629610032D061 /* Sources */,
 				D9BFF5B2244629610032D061 /* Frameworks */,
@@ -252,6 +253,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D944C39B2456E9F200CBC3DE /* Fetch Client Library */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Fetch Client Library";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "CLIENT=com.fiskaly.client-ios-all-v1.1.400.a\nif [ ! -f $CLIENT ]; then\n    curl -s -o $CLIENT https://storage.googleapis.com/fiskaly-cdn/clients/$CLIENT\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D9BFF5B1244629610032D061 /* Sources */ = {
