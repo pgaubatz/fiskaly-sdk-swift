@@ -35,12 +35,10 @@ Afterwards you will find following files in your project folder:
 └── Carthage
     └── Build
         └── iOS
-            ├── FiskalyClient.framework
-            └── Static
-                └── FiskalySDK.framework
+            ├── FiskalySDK.framework
 ```
 
-In order to use the fiskaly SDK you must include both, `FiskalySDK.framework` and `FiskalyClient.framework` in your Xcode project as can be seen in the following screenshot:
+In order to use the fiskaly SDK you must include both, `FiskalySDK.framework` in your Xcode project as can be seen in the following screenshot:
 
 ![screenshot-xcode-frameworks-integration](../media/screenshot-xcode-frameworks-integration.png?raw=true)
 
